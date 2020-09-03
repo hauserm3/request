@@ -8,7 +8,7 @@ https://api.nasa.gov/index.html
 
 
 ```sh
-$ npm run i
+$ npm i
 $ npm run build
 $ npm run start
 ```
