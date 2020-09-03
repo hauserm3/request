@@ -1,18 +1,18 @@
 import fs from "fs";
 
 export class Writer implements FileConfig {
-  filepath: string;
+  directory: string;
   filename: string;
 
   constructor(fileConfig: FileConfig) {
-    this.filepath = fileConfig.filepath;
+    this.directory = fileConfig.directory;
     this.filename = fileConfig.filename;
   }
 
   writeToFile(data: any): void {
-    fs.writeFile(`${this.filepath}${this.filename}`, data, (err) => {
+    fs.writeFile(`${this.directory}${this.filename}`, data, (err) => {
       if (err) return console.log(err);
-      console.log(`Data written to > ${this.filepath}${this.filename}`);
+      console.log(`Data written to > ${this.directory}${this.filename}`);
     });
   }
 

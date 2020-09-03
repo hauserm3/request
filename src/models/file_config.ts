@@ -1,4 +1,4 @@
 interface FileConfig {
-  filepath: string;
+  directory: string;
   filename: string;
 }

@@ -1,4 +1,4 @@
 {
-  "filepath": "./build/files/",
+  "directory": "./files/",
   "filename": "api_data.json"
 }
